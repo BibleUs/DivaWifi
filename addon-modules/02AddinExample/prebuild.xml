@@ -1,5 +1,5 @@
 <!-- Addins Example Module -->
-<Project frameworkVersion="v4_0" name="Diva.AddinExample" path="addon-modules/02AddinExample" type="Library">
+<Project frameworkVersion="v4_6" name="Diva.AddinExample" path="addon-modules/02AddinExample" type="Library">
   <Configuration name="Debug">
     <Options>
       <OutputPath>../../bin/</OutputPath>
@@ -28,7 +28,9 @@
   <Reference name="CsvHelper" path="Lib"/>
 
   <Files>
-    <Match pattern="*.cs" recurse="true"/>
+    <Match pattern="*.cs" recurse="true">
+     <Exclude name="obj" pattern="obj"/>
+	</Match>
     <Match pattern="*.ini" buildAction="Copy" destination="../../bin/" />
     <Match pattern="*.html" buildAction="Copy" destination="../../bin/" />
     <Match pattern="*.dll" recurse="true" buildAction="Copy" destination="../../bin/" />

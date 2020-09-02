@@ -1,5 +1,5 @@
 <!-- Diva.Data.MySql -->
-<Project frameworkVersion="v4_0" name="Diva.Data.MySQL" path="addon-modules/00Data/MySQL" type="Library">
+<Project frameworkVersion="v4_6" name="Diva.Data.MySQL" path="addon-modules/00Data/MySQL" type="Library">
   <Configuration name="Debug">
     <Options>
       <OutputPath>../../../bin/</OutputPath>
@@ -35,6 +35,7 @@
   <Files>
     <Match pattern="*.cs" recurse="true">
       <Exclude pattern="Tests" />
+      <Exclude name="obj" pattern="obj"/>
     </Match>
     <Match buildAction="EmbeddedResource" path="Resources" pattern="*.sql"/>
     <Match buildAction="EmbeddedResource" path="Resources" pattern="*.migrations"/>

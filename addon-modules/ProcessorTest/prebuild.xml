@@ -1,4 +1,4 @@
-<Project frameworkVersion="v4_0" name="Diva.Wifi.ProcessorTest" path="addon-modules/ProcessorTest" type="Exe">
+<Project frameworkVersion="v4_6" name="Diva.Wifi.ProcessorTest" path="addon-modules/ProcessorTest" type="Exe">
   <Configuration name="Debug">
     <Options>
       <OutputPath>../../bin/</OutputPath>
@@ -24,6 +24,7 @@
   <Files>
     <Match pattern="*.cs" recurse="true">
       <Exclude pattern="Tests" />
+      <Exclude name="obj" pattern="obj"/>
     </Match>
   </Files>
 </Project>

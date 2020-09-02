@@ -1,5 +1,5 @@
 <!-- Diva.Data -->
-<Project frameworkVersion="v4_0" name="Diva.Data" path="addon-modules/00Data" type="Library">
+<Project frameworkVersion="v4_6" name="Diva.Data" path="addon-modules/00Data" type="Library">
   <Configuration name="Debug">
     <Options>
       <OutputPath>../../bin/</OutputPath>
@@ -22,6 +22,7 @@
   <Files>
     <Match pattern="*.cs" recurse="false">
       <Exclude pattern="Tests" />
+      <Exclude name="obj" pattern="obj"/>
     </Match>
   </Files>
 </Project>

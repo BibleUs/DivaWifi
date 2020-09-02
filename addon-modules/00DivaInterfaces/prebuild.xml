@@ -1,5 +1,5 @@
 <!-- Diva.Wifi.ScriptEngine -->
-<Project frameworkVersion="v4_0" name="Diva.Interfaces" path="addon-modules/00DivaInterfaces" type="Library">
+<Project frameworkVersion="v4_6" name="Diva.Interfaces" path="addon-modules/00DivaInterfaces" type="Library">
   <Configuration name="Debug">
     <Options>
       <OutputPath>../../bin/</OutputPath>
@@ -26,6 +26,7 @@
   <Files>
     <Match pattern="*.cs" recurse="true">
       <Exclude pattern="Tests" />
+      <Exclude name="obj" pattern="obj"/>
     </Match>
   </Files>
 </Project>
